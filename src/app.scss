@@ -1,0 +1,96 @@
+/* try appling SASS, postCSS, emotion or tailwind  */
+
+$color-black: black;
+$color-white: white;
+$color-purple: #7a05fc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+.todo {
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  background-color: $color-black;
+  transform: translateY(10%);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  
+  .title {
+    color: $color-white;
+    margin-bottom: 10px;
+
+  }
+
+  .add-item {
+    width: 90%;
+    margin: auto;
+    display: flex;
+
+    input {
+      padding: 10px;
+      font-size: 20px;
+      background-color: transparent;
+      color: $color-white;
+      outline: none;
+      border: 2px solid $color-purple;
+      border-radius: 5px 0 0 5px;
+      flex: 1;
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 0 5px 5px 0;
+      background-color: $color-purple;
+      color: $color-white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .item-lists {
+    height: 80%;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    overflow-y:auto;
+    .item{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      // color를 랜덤하게 바꿀 수 있는 방법도 생각해보자.
+      background: linear-gradient(to bottom right, blue, pink);
+      margin: 10px 0;
+      border-radius: 10px;
+
+      .item-name{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .item-buttons{
+        button{
+          background-color: transparent;
+          font-size: 20px;
+          color: $color-white;
+          margin-left: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+

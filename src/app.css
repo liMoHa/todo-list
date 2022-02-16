@@ -1,1 +1,82 @@
-/* try appling postCSS  */
+/* try appling SASS, postCSS, emotion or tailwind  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.todo {
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  background-color: black;
+  transform: translateY(10%);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.todo .title {
+  color: white;
+  margin-bottom: 10px;
+}
+.todo .add-item {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+.todo .add-item input {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 2px solid #7a05fc;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+}
+.todo .add-item button {
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  background-color: #7a05fc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.todo .item-lists {
+  height: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+.todo .item-lists .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(to bottom right, blue, pink);
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.todo .item-lists .item .item-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.todo .item-lists .item .item-buttons button {
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=app.css.map */
